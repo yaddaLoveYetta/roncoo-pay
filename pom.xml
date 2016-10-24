@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.roncoo.pay.common</groupId>
@@ -32,6 +33,7 @@
 		<module>roncoo-pay-service</module>
 		<!-- 商户后台 -->
 		<module>roncoo-pay-web-merchant</module>
+
 	</modules>
 
 	<!-- 配置maven地址 -->
@@ -69,11 +71,12 @@
 		<javaee-api.version>7.0</javaee-api.version>
 		<commons-lang.version>2.6</commons-lang.version>
 		<commons-io.version>2.5</commons-io.version>
+		<commons-logging.version>1.2</commons-logging.version>
 		<jdom.version>2.0.2</jdom.version>
 		<activeMQ.version>5.11.4</activeMQ.version>
 		<javassist.version>3.12.1.GA</javassist.version>
 		<transaction.version>1.1</transaction.version>
-		
+
 	</properties>
 
 	<dependencyManagement>
@@ -226,7 +229,7 @@
 				<artifactId>log4j</artifactId>
 				<version>${log4j_version}</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>javassist</groupId>
 				<artifactId>javassist</artifactId>
@@ -296,6 +299,13 @@
 				<groupId>commons-io</groupId>
 				<artifactId>commons-io</artifactId>
 				<version>${commons-io.version}</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>${commons-logging.version}</version>
 			</dependency>
 
 			<!-- http://mvnrepository.com/artifact/commons-codec/commons-codec -->
